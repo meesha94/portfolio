@@ -23,7 +23,7 @@
 
     <h1>Junior Software Developer.</h1>
 
-    <p class="about-me">
+    <p class="intro">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum
       consequuntur tempore eos earum illo sapiente culpa alias consectetur
       tempora, voluptatibus enim temporibus laboriosam quas vitae porro, cumque
@@ -88,10 +88,11 @@
       </section>
     </main>
 
-    <main class="about">
+    
       <h3>About.</h3>
-      <p>
-        Having graduated with a History degree from De Montfort Univeristy in
+      <main class="about">
+      <p class="about__text">
+        Having graduated with a History degree from De Montfort University in
         2019 and not knowing what to do next, I signed up for a  3 week
         coding course after being intrigued and trying to self teach
         myself how to code. Since completing the 3 week course, I have wanted to
@@ -101,14 +102,14 @@
         addictive I found it. Spending hours at my laptop trying to get my code
         to work and that feling of success when it works is unbeatable.
       </p>
-      <img src="placeholder" />
+      <img class="about__image" src="images/random.jpeg" />
     </main>
 
-    <main>
-      <section class="experiance-and-interests">
+    <main class="experiance-interests">
+      <section class="card-experiance">
         <h4>Experiance</h4>
         <section class="experiance">
-          <div>
+          <div class="experiance__info">
             <h5>Trainee Software Developer at Nology <button>+</button></h5>
             <h6>Aug 2022 - present</h6>
             <ul>
@@ -116,7 +117,7 @@
               <li>Working as part of a group</li>
             </ul>
           </div>
-          <div>
+          <div class="experiance__info">
             <h5>
               Trainee Software Developer at Code Nation <button>+</button>
             </h5>
@@ -124,18 +125,18 @@
             <ul>
               <li>
                 Created a full web application using the MERN stack, mental
-                health diary and resources apllicatoin
+                health diary and resources application
               </li>
               <li>Present technical presenations to the group</li>
             </ul>
           </div>
-          <div>
+          <div class="experiance__info">
             <h5>Level 2 IT User Skills Coding Course at Code Nation</h5>
             <h6>November 2021 - December 2021 <button>+</button></h6>
             <ul>
               <li>
-                Created a website for a candle company to display their productd
-                and lesrn more about thr company
+                Created a website for a candle company to display their products
+                and learn more about their company
               </li>
               <li>
                 Worked in a group as the team lead to create a text based
@@ -145,22 +146,26 @@
           </div>
         </section>
       </section>
+      
 
-      <h4>Interests</h4>
+      <h4 class="subheading-interests">Interests</h4>
 
-      <section class="interests">
+      <section class="card-interests">
         <h5>Baking</h5>
         <h5>Candle Making</h5>
         <h5>Painting</h5>
       </section>
-    </main>
-    <h1>Get in Touch.</h1>
-    <button>CONTACT</button>
 
-    <footer>
-      <a href="placeholder"><img src="placeholder" alt="linkedin" /></a>
-      <a href="placeholder"><img src="placeholder" alt="github" /></a>
-      <a href="placeholder"><img src="placeholder" alt="cv" /></a>
+    </main>
+
+
+    <h3>Get in Touch.</h3>
+    <button class="contact">CONTACT</button>
+
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/meesha-anwar-a2b37b231/"><img class="linkedin" src="images/linkedin.png" alt="linkedin" /></a>
+      <a href="https://github.com/meesha94"><img class="github" src="images/github.png" alt="github" /></a>
+      <a class="footer__cv"href="placeholder">CV</a>
     </footer>
   </body>
 </html>
