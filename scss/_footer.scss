@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+
+$background-color: #2c2a2a;
+$footer-color: #323132;
+$secondary-color: #aa9683;
+$color: #ffffff;
+$font-family: "Tiro Gurmukh";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-color;
+  width: 100%;
+
+  .linkedin {
+  }
+
+  .github {
+  }
+
+  .footer__cv {
+  }
+}

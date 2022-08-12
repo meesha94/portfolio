@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+
+$background-color: #2c2a2a;
+$footer-color: #323132;
+$secondary-color: #aa9683;
+$color: #ffffff;
+$font-family: "Tiro Gurmukh";
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  &__project {
+    width: 400;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    h5 {
+      margin-right: 12px;
+    }
+  }
+
+  &__empty-box {
+    width: 125px;
+    height: 100px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: darkgray;
+  }
+}

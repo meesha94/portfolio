@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
-* {
-  margin: 20px;
-  padding: 5px;
-  color: #ffffff;
-  font-family: "Tiro Gurmukh";
-  background-color: #2c2a2a;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
 .navbar {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  padding: 30px;
 }
 .navbar__name {
   font-size: 2rem;
@@ -25,7 +27,7 @@
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 h1:after {
@@ -37,60 +39,17 @@ h1:after {
   border-bottom: 5px solid #aa9683;
 }
 
-.intro {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-
 h3 {
   font-size: 3rem;
-}
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.card__project {
-  width: 400;
-}
-.card__languages {
-  display: flex;
-  flex-wrap: wrap;
-}
-.card__languages h5 {
-  margin-right: 12px;
-}
-.card__empty-box {
-  width: 125px;
-  height: 100px;
-  border: 1px;
-  border-style: solid;
-  border-color: black;
-  background-color: darkgray;
 }
 
 h3:after {
   content: "";
   display: block;
-  margin: 0;
+  margin: 0px;
   width: 5%;
   padding-top: 20px;
   border-bottom: 5px solid #aa9683;
-}
-
-.about {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.about__text {
-  font-size: 1.2rem;
-}
-.about__image {
-  max-width: 500px;
 }
 
 h4 {
@@ -106,64 +65,148 @@ h4:after {
   border-bottom: 5px solid #aa9683;
 }
 
-.experiance-interests {
-  display: flex;
-  flex-direction: row;
+#get-in-touch {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.experiance__info h5 {
+#get-in-touch:after {
+  content: "";
+  display: block;
+  margin: 5;
+  margin-left: 520;
+  width: 5%;
+  padding-top: 20px;
+  border-bottom: 5px solid #aa9683;
+  margin-bottom: 100px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.contact__button {
+  font-size: 24px;
+  padding: 19px 19px;
+  border-radius: 7px;
+  color: #aa9683;
+}
+
+* {
+  margin: 5;
+  padding: 5;
+  color: #ffffff;
+  font-family: "Tiro Gurmukh";
+  background-color: #2c2a2a;
+}
+
+main {
+  min-width: 80vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-gap: 50px;
+  row-gap: 40px;
+  grid-template-areas: ". experiances__heading interests__heading ." "experiances__list interests__list ";
+}
+main .experiances__heading {
+  grid-area: experiances_heading;
+}
+main .experiances__list {
+  grid-area: experiances__list;
+}
+main .interests__heading {
+  grid-area: interests__heading;
+}
+main .interests__list {
+  grid-area: interests;
+}
+main .experiances__list h5 {
   font-size: 1.3rem;
   text-decoration: underline;
 }
-.experiance__info h6 {
+main .experiances__list h6 {
   font-size: 1rem;
 }
-.experiance__info ul li {
+main .experiances__list ul li {
+  font-size: 0.9rem;
+  list-style: circle;
+}
+main .interests__heading {
+  grid-area: interests__heading;
+  font-size: 1.5rem;
+}
+main .interests__heading:after {
+  content: "";
+  display: block;
+  margin: 0;
+  width: 2%;
+  padding-top: 20px;
+  border-bottom: 5px solid #aa9683;
+}
+main .interests__list {
+  grid-area: interests__list;
+}
+main .interests__list ul {
+  list-style: none;
+}
+main .interests__list ul li {
   font-size: 0.9rem;
   list-style: circle;
 }
 
-.subheading-interests {
+.intro {
   font-size: 1.5rem;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
-.subheading-interests:after {
-  content: "";
-  display: block;
-  margin: 0;
-  width: 25%;
-  padding-top: 20px;
-  border-bottom: 5px solid #aa9683;
-}
-
-.card-interests {
+.card {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card__project {
+  width: 400;
+}
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  margin-top: 150px;
 }
-.card-interests h5 {
-  font-size: 1.3rem;
+.card__info h5 {
+  margin-right: 12px;
 }
-
-.contact {
-  font-size: 24px;
-  padding: 19px 19px;
-  border-radius: 7px;
+.card__empty-box {
+  width: 125px;
+  height: 100px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: darkgray;
 }
 
 .footer {
   display: flex;
   justify-content: center;
+  background-color: #aa9683;
+  width: 100%;
 }
-.footer .linkedin {
-  max-height: 40px;
-  padding-top: 15px;
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
 }
-.footer .github {
-  max-height: 70px;
+.about__text {
+  font-size: 1.2rem;
+  width: 2000px;
 }
-.footer .footer__cv {
-  padding-top: 60px;
-  text-decoration: none;
+.about__image {
+  width: 1000px;
+  height: 400px;
 }
