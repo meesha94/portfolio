@@ -210,3 +210,37 @@ main .interests__list ul li {
   width: 1000px;
   height: 400px;
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .intro {
+    text-align: left;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vw;
+  }
+  .about__text {
+    width: 80vw;
+  }
+  .about__image {
+    width: 80vw;
+  }
+
+  #get-in-touch:after {
+    content: "";
+    display: block;
+    margin: 5;
+    margin-left: 110;
+    width: 10%;
+    padding-top: 20px;
+    border-bottom: 5px solid #aa9683;
+    margin-bottom: 100px;
+  }
+}

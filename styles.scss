@@ -9,22 +9,44 @@
 @import "scss/footer";
 @import "scss/about";
 
-
-
 $background-color: #2c2a2a;
 $footer-color: #323132;
 $secondary-color: #aa9683;
 $color: #ffffff;
 $font-family: "Tiro Gurmukh";
 
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+  }
 
+  .intro {
+    text-align: left;
+  }
 
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vw;
 
+    &__text {
+      width: 80vw;
+    }
 
+    &__image {
+      width: 80vw;
+    }
+  }
 
-
-
-
-
-
-
+  #get-in-touch:after {
+    content: "";
+    display: block;
+    margin: 5;
+    margin-left: 110;
+    width: 10%;
+    padding-top: 20px;
+    border-bottom: 5px solid $secondary-color;
+    margin-bottom: 100px;
+  }
+} ;
