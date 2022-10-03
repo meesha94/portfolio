@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card__project {
+  width: 400;
+}
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.card__info h5 {
+  margin-right: 12px;
+}
+.card__box {
+  width: 125px;
+  height: 100px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: darkgray;
+}

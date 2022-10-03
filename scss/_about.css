@@ -5,6 +5,10 @@
   justify-content: space-evenly;
   padding: 20px;
 }
+.about img {
+  height: 12px;
+  width: 40px;
+}
 .about__text {
   font-size: 1.2rem;
   width: 2000px;
