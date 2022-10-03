@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.about__text {
+  font-size: 1.2rem;
+  width: 2000px;
+}
+.about__image {
+  width: 1000px;
+  height: 400px;
+}
